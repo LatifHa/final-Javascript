@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 1000vh;
+}
+
+nav {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+
+    .container {
+
+        .Fiorello-logo {
+            
+            img {
+                width: 205px;
+            }
+
+        }
+
+        .Fiorello-options {
+            padding: 0;
+
+            ul {
+                margin: 0px;
+                padding: 0;
+
+                li {
+                    cursor: pointer;
+                    list-style: none;
+                    padding-right: 8%;
+                    padding-top: 5px;
+                    font-size: 12px;
+                    font-weight: 550;
+                    color: #1b1b1b;
+
+                    a{
+                        color: #1b1b1b;   
+                    }
+                   
+
+                    .second{
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+                        
+                                ul{
+                                    li{
+                                    padding: 15px 0px 0px 10px;
+                                    font-size: 13px;
+                                    color: #737373;
+                                    }
+                                }
+                    }
+                     &:hover{
+                        .second{
+                            margin-top: 25px;
+                            height: 263px;
+                            width: 15%;
+                            visibility: visible;
+                            opacity:1;
+                            overflow:visible;
+                            background-color: #fff;
+                        }
+                        
+                    } 
+                    
+                    .big-page{
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+
+                        .title{
+                            padding: 20px 0px 0px 35px;
+                        }
+
+                        ul{
+                            li{
+                                color: #737373;
+                                font-size: 13px;
+                                padding: 20px 0px 0px 35px;
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .big-page{
+                            margin-top: 25px;
+                            height: 489px;
+                            width: 90%;
+                            visibility: visible;
+                            opacity:1;
+                            overflow:visible;
+                            background-color: #fff;
+                            left: 5%;
+                        }
+                    }
+
+
+                    .Portfolio-page{
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+                    }
+                    ul{
+                        li{
+                            color: #737373;
+                            font-size: 13px;
+                            padding: 17px 0px 0px 10px;
+                        }
+                        ul{
+                            color: #737373;
+                            font-size: 13px;
+                            padding: 17px 0px 0px 10px;
+                            .rightfont1{
+                                padding-left: 35%;
+                            }
+                            .rightfont2{
+                                padding-left: 40%;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .Portfolio-page{
+                            margin-top: 25px;
+                            height: 200px;
+                            width: 15%;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: #fff;
+                        }
+                    }
+
+                    .blog-page{
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+                        ul{
+                            li{
+                                color: #737373;
+                                font-size: 13px;
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                   &:hover{
+                       .blog-page {
+                        margin-top: 25px;
+                        height: 130px;
+                        width: 150px;
+                        visibility: visible;
+                        opacity: 1;
+                        overflow: visible;
+                        background-color: #fff;
+                        padding-left: 15px;
+                        }
+                    }
+                    
+                    .elements-page{
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+                        ul{
+                            li{
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .elements-page {
+                            margin-top: 25px;
+                            height: 170px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+
+        .mix {
+           
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+
+            .search {
+                padding-right: 20px;
+            }
+
+            .basket {
+                padding-right: 20px;
+            }
+        }
+
+    }
+}
+
+main{
+    
+}
+
+footer {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: #fefaf3;
+
+    .top-footer {
+        .col-3 {
+            .title {
+                padding-top: 50px;
+            }
+
+            .list {
+                padding-top: 30px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+                    
+                    li {
+                        
+                        a {
+                            text-decoration: none;
+                            color: #8b8b8b;
+                            font-size: 12px !important;
+
+                            &:hover {
+                                color: #f34f3f;
+                               
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+
+        .line {
+            border-top: 1px solid #8b8b8b;
+
+        }
+
+        .container {
+            .rights {
+                span {
+                    font-size: 12px;
+                    color: #afafaf;
+                    a{
+                        text-decoration: none;
+                        color: #6d6a6a;
+                        &:hover{
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+            .insta-face{
+                .insta{
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+                        &:hover{
+                            color: #f34f3f;
+                        }
+                    }
+
+                }
+                .face{
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+                        padding-left: 25px;
+                        &:hover{
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
